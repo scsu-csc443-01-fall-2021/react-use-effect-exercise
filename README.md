@@ -24,3 +24,7 @@ The data should also be written to local storage after the component is evaluate
 You will need two _useEffect_ invocations to solve this problem; one to load data from storage and another to write to storage. The order in which the invocations are defined is the order in which they will execute. In this problem, the ordering matters and it will affect the outcome.
 
 There is no submission for this assignment. We will go over the solution during next lecture.
+
+## Reference
+
+This starter files contained in this repository were obtained from Academind at https://github.com/academind/react-complete-guide-code/tree/08-practice-project.
