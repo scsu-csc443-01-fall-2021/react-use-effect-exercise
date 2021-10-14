@@ -12,6 +12,14 @@ const loadUsersFromLocal = () =>
 function App() {
   const [usersList, setUsersList] = useState([]);
 
+  useEffect(() => {
+    setUsersList(loadUsersFromLocal());
+  }, []);
+
+  useEffect(() => {
+    saveUsersToLocal(usersList);
+  }, [usersList]);
+
   const addUserHandler = (uName, uAge) => {
     setUsersList((prevUsersList) => {
       return [
